@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ExamReviewProject.DataModels
 {
-    public class Class1
+    public class Company
     {
+        public int Id { get; set; }
+        public string CompanyName { get; set; }
+
+        public virtual List<Job> Jobs { get; set; }
     }
 }

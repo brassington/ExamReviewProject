@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using ExamReviewProject.DataModels;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -26,5 +28,8 @@ namespace ExamReviewProject.Data
             : base("DefaultConnection")
         {
         }
+
+        public DbSet<Job> Jobs { get; set; }
+        public DbSet<Company> Companies { get; set; }
     }
 }

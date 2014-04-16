@@ -1,0 +1,14 @@
+﻿@model ExamReviewProject.Models.ViewModelVehicle
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Jobs Index</h2>
+
+<table>
+    <tr><th>Id</th><th>Title</th><th>Salary</th></tr>
+    @foreach (var job in Model.Jobs)
+    {
+        <tr><td>@job.Id</td><td>@job.JobTitle</td><td>@job.Salary</td></tr>
+    }
+</table>
