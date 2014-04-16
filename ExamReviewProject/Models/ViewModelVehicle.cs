@@ -10,5 +10,6 @@ namespace ExamReviewProject.Models
     {
         public List<Job> Jobs { get; set; }
         public List<Company> Companies { get; set; }
+        public Job Job { get; set; }
     }
 }

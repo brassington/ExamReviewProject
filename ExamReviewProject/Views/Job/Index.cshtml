@@ -12,3 +12,10 @@
         <tr><td>@job.Id</td><td>@job.JobTitle</td><td>@job.Salary</td></tr>
     }
 </table>
+
+<form action="/Job/Index" method="post">
+    <input type="text" name="newJobTitle" placeholder="Job title" /><br />
+    <input type="text" name="newSalary" placeholder="Salary" /><br />
+    <input type="text" name="newCompanyId" placeholder="Company Id" /><br />
+    <button class="btn btn-success">New Job</button> 
+</form>

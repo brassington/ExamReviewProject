@@ -11,5 +11,6 @@ namespace ExamReviewProject.Adapters.Interfaces
     public interface IJobs
     {
         ViewModelVehicle GetJobsFromVM();
+        ViewModelVehicle PostJob(string newJobTitle, double newSalary, int newCompanyId);
     }
 }
