@@ -13,10 +13,7 @@ namespace ExamReviewProject.Controllers
         // GET: Job
         public ActionResult Index()
         {
-            ApplicationDbContext db = new ApplicationDbContext();
-            ViewModelVehicle model = new ViewModelVehicle();
-
-            model.Jobs = db.Jobs.ToList();
+            GetJobsFromVM()
 
             return View(model);
         }
